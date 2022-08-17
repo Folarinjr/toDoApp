@@ -1,11 +1,9 @@
-import React from 'react'
 import {View, Text, StyleSheet, Pressable} from 'react-native'
 
 const GoalItem = ({itemData, deleteGoal, id}) => {
   return (
     <Pressable onPress={deleteGoal.bind(this, id)}>
       <View 
-        //key={itemData.item.id} 
         style={styles.goalsItem}
       >
         <Text style={styles.goalText}>
