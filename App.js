@@ -1,3 +1,5 @@
+import { StatusBar } from 'expo-status-bar';
+
 import { useState, useEffect, useCallback } from 'react';
 import { StyleSheet,View,FlatList } from 'react-native';
 import * as SplashScreen from 'expo-splash-screen';
@@ -76,6 +78,7 @@ const App = () => {
       style={styles.container}
       onLayout={onLayoutRootView}
     >
+      <StatusBar style='dark'/>
       <GoalInput addGoal={addGoal}/>
       <View style={styles.goalsContainer}>
         <FlatList 
